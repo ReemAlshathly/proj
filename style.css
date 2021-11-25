@@ -1,0 +1,148 @@
+body {
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: border-box;
+	    font-family: Arial, Helvetica, sans-serif;
+	
+
+	}
+	
+
+	/* ---------------- header style ------------------ */
+	
+
+	.nav {
+	    display: grid;
+grid-template-columns: 30% 70%;
+	    background: rgb(20, 20, 20);
+	    width: 100%;
+	    height: 5rem;
+	    color: white;
+	    font-size: 1rem;
+	    margin-top: 0px;
+	    align-items: center;
+	   
+	
+
+	}
+	.icon{
+	    display: flex;
+	    flex-direction:row;
+	    padding: 1rem;
+	    font-size: 2rem;
+	}
+	
+
+	.icon > sub {
+	    font-size:  16px;
+	    align-self: flex-end;
+	    color: green;
+	    
+	}
+	.wrapper {
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: space-around;  
+	    margin-top: 10px;
+}
+	.wrapper > div> p{
+	    align-items: center;
+	}
+	.wrapper > div {
+	    padding: 1rem;
+	}
+	
+
+	.wrapper > div >a {
+	    text-decoration: none;
+	    color: white;
+	}
+	
+
+	.wrapper > div >a:hover {
+	    color: rgb(32, 167, 50);
+	  
+	    
+	}
+	/* -------------------hero ---------------------------- */
+	.b{
+	    width: 100%;
+	    height: 350px;
+	    background:  linear-gradient(90deg, rgba(0,0,0,0.4) , rgba(0,0,0,.3)) ,url("../job/0.jpg") ;
+	   background-size: cover;
+	    color: white;
+	    font-size: 6rem;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    
+	}
+	.b > div > a{
+	    font-size: 1rem;
+	    font-family:cursive;
+	    color: white;
+	    text-decoration: none;
+	}
+	
+
+	/* -------------------search ---------------------------- */
+	.search {
+	    width: 100%;
+	    height: 400px;
+	    background-color: rgb(22, 168, 22);
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	}
+	
+
+	
+
+	
+
+	.search .row1 > input {
+	    width: 300px;
+	    height: 40px;
+	    border-radius: 10px;
+	    border: none;
+	    margin: 10px;
+	}
+	.search .row1 > select {
+	    width: 300px;
+	    height: 40px;
+	    border-radius: 10px;
+	    border: none;
+	    margin: 10px;
+	}
+	.search .row1 > button {
+	    width: 200px;
+	    height: 40px;
+	    background-color: yellow;
+	    color: black;
+	    font-weight: bold;
+	    border: none;
+	    box-shadow: 3px 3px  #1616161f;
+	}
+	
+
+	.search .row2 {
+	    margin: 20px;
+	    padding: 10px;
+	    color: rgba(34, 33, 33, 0.671);
+	}
+	
+
+	/* -------------------media ---------------------------- */
+	@media screen and (max-width: 580px) {
+	   .nav {
+	       display: flex;
+	       flex-direction: column;
+	       height: 500px;
+	   }
+	   .wrapper {
+	    display: flex;
+	    flex-direction: column;
+	   }
+	  }
